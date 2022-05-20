@@ -51,7 +51,7 @@ namespace PepitoSchool.Forms.Forms
 
         private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Seleccione toda la fila del estudiante con la flechita de la izquierda (parece boton de play) y de click derecho para ver más opciones");
+            MessageBox.Show("Seleccione toda la fila del estudiante");
         }
 
         private void promedioToolStripMenuItem_Click(object sender, EventArgs e)

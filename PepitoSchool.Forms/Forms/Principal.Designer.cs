@@ -53,13 +53,16 @@ namespace PepitoSchool.Forms.Forms
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ContextMenuStrip = this.cmsDataGridView;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 27);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.GridColor = System.Drawing.Color.PeachPuff;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 24);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(642, 221);
+            this.dataGridView1.Size = new System.Drawing.Size(659, 346);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDown);
@@ -71,7 +74,7 @@ namespace PepitoSchool.Forms.Forms
             this.modificarToolStripMenuItem,
             this.promedioToolStripMenuItem});
             this.cmsDataGridView.Name = "cmsDataGridView";
-            this.cmsDataGridView.Size = new System.Drawing.Size(181, 92);
+            this.cmsDataGridView.Size = new System.Drawing.Size(129, 70);
             this.cmsDataGridView.Click += new System.EventHandler(this.cmsDataGridView_Click);
             // 
             // eliminarToolStripMenuItem
@@ -101,7 +104,7 @@ namespace PepitoSchool.Forms.Forms
             this.opcionesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(642, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(659, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -172,16 +175,16 @@ namespace PepitoSchool.Forms.Forms
             // 
             this.btnbuscar.Location = new System.Drawing.Point(570, 0);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(26, 23);
+            this.btnbuscar.Size = new System.Drawing.Size(47, 23);
             this.btnbuscar.TabIndex = 3;
-            this.btnbuscar.Text = "🔎";
+            this.btnbuscar.Text = "Buscar";
             this.btnbuscar.UseVisualStyleBackColor = true;
             this.btnbuscar.Visible = false;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(602, 1);
+            this.button1.Location = new System.Drawing.Point(619, 1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(28, 23);
             this.button1.TabIndex = 4;
@@ -194,7 +197,7 @@ namespace PepitoSchool.Forms.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 250);
+            this.ClientSize = new System.Drawing.Size(659, 370);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.txtbuscar);

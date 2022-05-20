@@ -29,7 +29,7 @@ namespace DepreciationDBApp
         {
             try
             {
-                //appsettings daba error por el path asi que lo cree directamente en el PepitoSchool.Form/bin/debug/net5.0-windows
+              
                 Configuration = new ConfigurationBuilder()
                .AddJsonFile("appsettings.json")
                .AddEnvironmentVariables().Build();
@@ -55,11 +55,11 @@ namespace DepreciationDBApp
             services.AddScoped<IPepitoSchoolContext, PepitoSchoolContext>();
             services.AddScoped<IEstudianteRepository, EFEstudianteRepository>();
             services.AddScoped<IEstudiantesServices, EstudianteServices>();
-            services.AddScoped<Principal>();
+            services.AddScoped<FrmEstudiante>();
 
             using (var serviceScope = services.BuildServiceProvider())
             {
-                var main = serviceScope.GetRequiredService<Principal>();
+                var main = serviceScope.GetRequiredService<FrmEstudiante>();
                 Application.Run(main);
             }
 
